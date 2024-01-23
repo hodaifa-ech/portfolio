@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header div {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+header img{
+  
+    width: 120px;
+    border: 4px solid #2c2f3f;
+    width: 200px; /* Remplacez 400px par la valeur souhaitée */
+    height: 200px;
+    border-radius: 43%
+}
+
+.logo{
+  
+    text-decoration: none;
+    color: rgb(11, 110, 239);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.navigation a{
+   color: rgb(11, 110, 239) ;
+   text-decoration: none;
+   font-size: 1.1em;
+   font-weight:500 ;
+  padding-left: 40px;
+}
+.navigation a:hover{
+    color: rgb(110, 53, 163);
+}
+section{
+    padding: 270px 250px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(205, 232, 247);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+.main h2{
+    color: rgb(135, 133, 133);
+      font-size: 1.4em;
+      font-weight: 500;
+}
+.main p{
+    color: rgb(29, 29, 30);
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: 450;
+    margin-bottom: 30px;
+}
+.main-btn{
+    background-color: rgb(72, 72, 198);
+    text-decoration: none;
+    margin-bottom: 40px;
+    letter-spacing: 1Px;
+    border:rgb(72, 72, 198) solid ;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em  2.1875em;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: rgb(44, 44, 209);
+    transform: scale(1.1,1.1);
+
+}
+.social-icons a{
+   color:rgb(72, 72, 151) ;
+   font-size: 1.7em;
+   padding-right: 30px;
+
+}
+
+.section-title {
+    padding-bottom: 25px;
+}
+
+.section-title h2 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 2S0px;
+    position: relative;
+    color: #173b6c;
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+.education .education-item {
+    padding: 0 0 20px 20px;
+    border-left: 2px solid #1f5297;
+}
+.education .education-item h4 {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 0px;
+}
+.education .education-item h5 {
+    font-size: 16px;
+    font-weight: 600;
+    background: #e4edf9;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 0px;
+}
+.education .education-item p {
+    color: #495057;
+    margin-bottom: 2px;
+    
+}
+
+.skills .progress {
+    margin-bottom: 22px;
+}
+.skills .progress .skill {
+    color: #495057;
+}
+.skills .progress .skill h4 {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 3px;
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress .progress-bar-wrap {
+    background: #e89e17;
+    height: 10px;
+}
+.skills .progress .progress-bar-wrap .progress-bar {
+    height: 10px;
+    background-color: #149ddd;
+}
+
+
+
+
+.projects {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+    padding: 10px;
+    font-weight: 600;
+}
+.projects .project {
+    position: relative;
+    border-radius: 15px;
+}
+.projects .project img {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
+.projects .project .hover-items {
+    width: 100%;
+    height: 100%;
+    background-color: #6217d3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+.projects .project .hover-items h3 {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.projects .project .hover-items p {
+    color: #dae1ec;
+    margin-bottom: 20px;
+}
+.projects .project .hover-items a {
+    background-color: #dce8f8;
+    color: #173b6c;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects .project .hover-items a:hover {
+    background-color: #fff;
+    color: #173b6c;
+}
+.project:hover .hover-items {
+    opacity: 1;
+    transform: scale(1);
+}
+/*Projects Section end*/
+
+
+/*Contact Section start*/
+.contact {
+    display: flex;
+    justify-content: center;
+}
+.contact .contact-form {
+    width: 70%;
+}
+.contact .input-control {
+    margin: 20px 0;
+}
+.contact .input-control input, .contact .input-control textarea {
+    border-radius: 20px;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    background-color: #e4edf9;
+    width: 100%;
+    color: #272829;
+    resize: none;
+}
+.contact .inline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.contact .submit-btn {
+    display: flex;
+    justify-content: center;
+}
+.contact .submit-btn .btn {
+    border-radius: 30px;
+    color: #149ddd;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #149ddd;
+    padding: 12px;
+}
+.contact .submit-btn .btn:hover {
+    background-color: #149ddd;
+    transform: translateX(0);
+    transition: all 0.7s ease-out;
+    cursor: pointer;
+    color: #fff;
+}
+/*Contact Section end*/
